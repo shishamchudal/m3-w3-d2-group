@@ -1,55 +1,58 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+body {
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+
 .card {
-    width: 300px;
-    text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.card-header {
-    background-color: black;
-    color: white;
-    padding: 15px;
-    font-size: 20px;
-    font-weight: bold;
+.card .card-header {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
 }
-.card-content {
-    padding: 20px;
+.card .card-content {
+  padding: 20px;
 }
-.card-content p {
-    margin: 10px 0;
-    font-size: 16px;
+.card .card-content p {
+  margin: 10px 0;
+  font-size: 16px;
 }
-.bold {
-    font-weight: bold;
+.card .card-content p.price {
+  font-size: 24px;
+  font-weight: bold;
 }
-.price {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 10px 0;
+.card .card-content p.per-month {
+  color: gray;
 }
-.per-month {
-    color: gray;
+.card .card-content .bold {
+  font-weight: bold;
 }
-.button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
+.card .button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
 }
-.button:hover {
-    background-color: #45a049;
+.card .button:hover {
+  background-color: rgb(60.5577689243, 139.4422310757, 63.7450199203);
 }
