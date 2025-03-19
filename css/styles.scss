@@ -1,0 +1,74 @@
+// Variables
+$primary-color: #4CAF50;
+$secondary-color: black;
+$text-color: white;
+$border-radius: 10px;
+
+// Base styles
+%centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    @extend %centered;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.card {
+    width: 300px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: $border-radius;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    .card-header {
+        background-color: $secondary-color;
+        color: $text-color;
+        padding: 15px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .card-content {
+        padding: 20px;
+
+        p {
+            margin: 10px 0;
+            font-size: 16px;
+
+            &.price {
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            &.per-month {
+                color: gray;
+            }
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+    }
+
+    .button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: $primary-color;
+        color: $text-color;
+        text-decoration: none;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: darken($primary-color, 10%);
+        }
+    }
+}
