@@ -24,6 +24,7 @@ body {
   padding: 15px;
   font-size: 20px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 .card .card-content {
   padding: 20px;
@@ -54,5 +55,5 @@ body {
   cursor: pointer;
 }
 .card .button:hover {
-  background-color: rgb(60.5577689243, 139.4422310757, 63.7450199203);
+  background-color: red;
 }
